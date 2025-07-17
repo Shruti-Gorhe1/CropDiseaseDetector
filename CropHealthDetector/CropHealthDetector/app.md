@@ -11,7 +11,6 @@ Preferred communication style: Simple, everyday language.
 ## Recent Changes (January 17, 2025)
 
 ✓ Built complete full-stack crop disease detection web application
-✓ Implemented user authentication with Replit Auth
 ✓ Created AI-powered disease detection using intelligent image analysis
 ✓ Added PostgreSQL database integration for storing predictions
 ✓ Developed comprehensive UI with landing page, detection interface, and history
@@ -51,7 +50,6 @@ Preferred communication style: Simple, everyday language.
 ## Key Components
 
 ### Authentication System
-- Uses Replit's OpenID Connect for secure authentication
 - Session-based authentication with PostgreSQL storage
 - Automatic token refresh and user session management
 - Protected routes requiring authentication
@@ -63,11 +61,6 @@ Preferred communication style: Simple, everyday language.
 - **Accuracy**: 96.8% accuracy on PlantVillage dataset
 - **Input**: 224x224 RGB images with normalization
 
-### Database Schema
-- **Users**: Store user profiles from Replit Auth
-- **Predictions**: Store disease detection results and metadata
-- **Sessions**: Handle user authentication sessions
-
 ### Frontend Components
 - **Disease Detector**: Main upload and detection interface
 - **File Upload**: Drag-and-drop image upload with validation
@@ -76,8 +69,6 @@ Preferred communication style: Simple, everyday language.
 - **History**: View past predictions and statistics
 
 ## Data Flow
-
-1. **User Authentication**: Login via Replit Auth → Session creation
 2. **Image Upload**: File validation → Client-side preprocessing
 3. **Disease Detection**: TensorFlow.js inference → Results display
 4. **Data Persistence**: Save prediction to database → Update user stats
